@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+  body {
+    background:
+      linear-gradient(
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0.45)
+      ),
+      url("edzLogo.jpg"), fixed;
+
+  }
+  </style>
+<h2
+  style="color:rgb(62, 174, 155);">
+  Edward's Playground</h2>
+
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
+<p>youtube</p>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<br />
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/lOP0XrGSuYA">
+</iframe>
+
+
+</body>
+</html>
