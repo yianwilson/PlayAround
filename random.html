@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow:hidden;
+  background-color: #fff;
+  font-family: Arial;
+  z-index: 1000;
+}
+
+.navbar a{
+  float:left;
+  font-size: 12px;
+  color:black;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+
+
+
+.dropdown {
+  float:left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 12px;
+  border: none;
+  outline:none;
+  color:black;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #e6e6e6;
+}
+
+.dropdown-content{
+  display:none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 100px 160px 0px rgba(0,0,0,1);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  float:none;
+  color:black;
+  padding:12px 16px;
+  text-decoration: none;
+  display:block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('comingsoon.jpg');;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Giggles
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="MyProfile.html">Eddy's Profile</a>
+      <a href="play.html">Location</a>
+      <a href="random.html">Randoms</a>
+    </div>
+  </div>
+</div>
+
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>35 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p>v0.1</p>
+  </div>
+</div>
+
+</body>
+</html>
