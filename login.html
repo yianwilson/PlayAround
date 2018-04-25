@@ -1,0 +1,35 @@
+<head>
+  <link rel="stylesheet" href="login.css" >
+</head>
+
+<div class="login">
+	<h1>GET INSIDE BOI</h1>
+    <form method="post">
+    	<input id = "username" type="text" name="u" placeholder="Bad Ass Username"  />
+        <input type="password" name="p" placeholder="Stupid Password" />
+        <button type="submit" onclick = "myFunction()" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    </form>
+</div>
+
+<p id="demo"></p>
+
+
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("username").value;
+
+    if (x == "something"){
+      text = "success";
+      document.getElementById("demo").innerHTML = text;
+      setTimeout(function() {window.location = "home.html" });
+    }else{
+      text = "nah";
+      document.getElementById("demo").innerHTML = text;
+    }
+
+}
+</script>
