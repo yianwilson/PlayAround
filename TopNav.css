@@ -74,3 +74,8 @@
 .dropdown:hover .dropdown-content{
   display:block;
 }
+
+.shop-cart{
+  padding: 4px 2px;
+  float: right;
+}
